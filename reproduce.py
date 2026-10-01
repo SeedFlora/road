@@ -83,6 +83,9 @@ def prepare(recompute=False):
         filenames = {int(r["id"]): r["file"] for r in csv.DictReader(fh)}
     with (ROOT / "repro/partitions.json").open(encoding="utf-8") as fh:
         partitions = json.load(fh)
+    with (ROOT / "repro/dataset_manifest.csv").open(encoding="utf-8", newline="") as fh:
+        image_hashes = {Path(row["path"]).name: row["sha256"] for row in csv.DictReader(fh)
+                        if Path(row["path"]).parent.name == "RDDC 2024_image"}
     for rel, parts in partitions.items():
         dest = ROOT / rel
         cfg = {"path": dest.as_posix(), "names": NAMES}
@@ -100,7 +103,13 @@ def prepare(recompute=False):
             for i in ids:
                 src = ROOT / "RDDC 2024_image" / filenames[i]
                 dst = images / filenames[i]
-                if not dst.exists():
+                if dst.exists():
+                    if not src.samefile(dst):
+                        with dst.open("rb") as generated_image:
+                            digest = hashlib.file_digest(generated_image, "sha256").hexdigest()
+                        if digest != image_hashes[filenames[i]]:
+                            raise RuntimeError(f"Generated image differs from the original dataset: {dst}. Use a fresh output directory.")
+                else:
                     # Read-only raw-data mounts can be on a different filesystem.
                     try:
                         dst.hardlink_to(src)
