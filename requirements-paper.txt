@@ -1,0 +1,4 @@
+# Versions used when generating the saved paper results.
+numpy==2.4.6
+matplotlib==3.11.0
+Pillow==12.2.0

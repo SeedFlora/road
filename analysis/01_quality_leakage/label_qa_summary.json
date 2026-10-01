@@ -1,0 +1,109 @@
+{
+ "n_boxes": 20211,
+ "n_labeled_images": 7101,
+ "duplicate_boxes_same_class_iou_gt_0.9": {
+  "pairs": 0,
+  "exact_iou_1": 0,
+  "images": 0,
+  "by_class": {},
+  "example_ids": []
+ },
+ "same_class_nested_boxes_ios_gt_0.9": {
+  "pairs": 252,
+  "images": 190,
+  "by_class": {
+   "longitudinal": 79,
+   "lateral": 74,
+   "alligator": 38,
+   "pothole": 56,
+   "others": 5
+  }
+ },
+ "cross_class_overlap_iou_gt_0.5": {
+  "pairs": 33,
+  "images": 32,
+  "by_pair": {
+   "longitudinal-alligator": 13,
+   "alligator-pothole": 9,
+   "lateral-pothole": 4,
+   "longitudinal-pothole": 3,
+   "alligator-others": 1,
+   "longitudinal-others": 1,
+   "pothole-others": 1,
+   "longitudinal-lateral": 1
+  },
+  "example_ids": [
+   15,
+   103,
+   110,
+   113,
+   126,
+   133,
+   191,
+   237,
+   283,
+   365
+  ]
+ },
+ "degenerate_boxes_w_or_h_lt_0.005": {
+  "n": 3,
+  "images": 3,
+  "by_class": {
+   "lateral": 2,
+   "pothole": 1
+  },
+  "example_ids": [
+   351,
+   1664,
+   3045
+  ]
+ },
+ "out_of_bounds_boxes": {
+  "n": 0,
+  "images": 0
+ },
+ "boxes_area_gt_0.9": {
+  "n": 167,
+  "by_class": {
+   "longitudinal": 1,
+   "alligator": 115,
+   "pothole": 4,
+   "others": 47
+  },
+  "example_ids": [
+   3033,
+   3039,
+   3048,
+   3057,
+   3086,
+   3097,
+   3113,
+   3290,
+   3321,
+   3389
+  ]
+ },
+ "images_gt_15_boxes": {
+  "n": 17,
+  "ids": [
+   5556,
+   3731,
+   5716,
+   3708,
+   7098,
+   6150,
+   5260,
+   2281,
+   6024,
+   632,
+   739,
+   5961,
+   1950,
+   3749,
+   5722,
+   3722,
+   2303
+  ],
+  "max": 31
+ }
+}

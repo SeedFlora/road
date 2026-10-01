@@ -1,0 +1,20 @@
+{
+  "python": "3.13.5",
+  "original_os": "Windows 11",
+  "original_gpu": "NVIDIA GeForce RTX 3070 Ti Laptop GPU (8 GiB)",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "ultralytics": "8.4.75",
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.0",
+    "timm": "1.0.27",
+    "opencv-python": "4.13.0.92",
+    "Pillow": "12.2.0",
+    "matplotlib": "3.11.0",
+    "PyYAML": "6.0.3",
+    "huggingface-hub": "1.19.0"
+  }
+}

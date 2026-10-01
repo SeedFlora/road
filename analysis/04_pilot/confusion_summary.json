@@ -1,0 +1,120 @@
+{
+ "group": {
+  "gt_total": [
+   769,
+   515,
+   551,
+   937,
+   259
+  ],
+  "correct_frac_of_gt": [
+   0.242,
+   0.117,
+   0.189,
+   0.116,
+   0.058
+  ],
+  "missed_frac_of_gt": [
+   0.733,
+   0.847,
+   0.773,
+   0.871,
+   0.857
+  ],
+  "misclassified_frac_of_gt": [
+   0.025,
+   0.037,
+   0.038,
+   0.013,
+   0.085
+  ],
+  "background_fp_per_pred_class": [
+   144,
+   51,
+   70,
+   82,
+   25
+  ],
+  "top_confusions": [
+   [
+    17,
+    "gt longitudinal -> pred alligator"
+   ],
+   [
+    16,
+    "gt lateral -> pred longitudinal"
+   ],
+   [
+    10,
+    "gt others -> pred alligator"
+   ],
+   [
+    8,
+    "gt alligator -> pred longitudinal"
+   ],
+   [
+    7,
+    "gt pothole -> pred alligator"
+   ]
+  ]
+ },
+ "random": {
+  "gt_total": [
+   756,
+   496,
+   522,
+   934,
+   274
+  ],
+  "correct_frac_of_gt": [
+   0.325,
+   0.161,
+   0.236,
+   0.142,
+   0.102
+  ],
+  "missed_frac_of_gt": [
+   0.655,
+   0.825,
+   0.739,
+   0.845,
+   0.807
+  ],
+  "misclassified_frac_of_gt": [
+   0.02,
+   0.014,
+   0.025,
+   0.013,
+   0.091
+  ],
+  "background_fp_per_pred_class": [
+   190,
+   76,
+   99,
+   127,
+   48
+  ],
+  "top_confusions": [
+   [
+    12,
+    "gt others -> pred pothole"
+   ],
+   [
+    12,
+    "gt longitudinal -> pred alligator"
+   ],
+   [
+    7,
+    "gt pothole -> pred alligator"
+   ],
+   [
+    7,
+    "gt alligator -> pred longitudinal"
+   ],
+   [
+    6,
+    "gt others -> pred alligator"
+   ]
+  ]
+ }
+}

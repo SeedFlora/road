@@ -1,0 +1,131 @@
+{
+ "E1": {
+  "group_s1": {
+   "yaml": "analysis/06_paper_exps/ds/group_s1/data.yaml",
+   "n": {
+    "train": 4971,
+    "val": 1065,
+    "test": 1065
+   },
+   "leak_rate": {
+    "val": 0.0019,
+    "test": 0.0
+   },
+   "test_overlap_with_seed0": 0.3925,
+   "res_share_test": {
+    "640": 0.1784,
+    "720": 0.0113,
+    "960": 0.708,
+    "1080": 0.0601,
+    "1600": 0.0423
+   }
+  },
+  "random_s1": {
+   "yaml": "analysis/06_paper_exps/ds/random_s1/data.yaml",
+   "n": {
+    "train": 4971,
+    "val": 1065,
+    "test": 1065
+   },
+   "leak_rate": {
+    "val": 0.707,
+    "test": 0.7183
+   },
+   "test_overlap_with_seed0": 0.1465,
+   "res_share_test": {
+    "640": 0.1784,
+    "720": 0.0075,
+    "960": 0.7052,
+    "1080": 0.0592,
+    "1600": 0.0498
+   }
+  },
+  "group_s2": {
+   "yaml": "analysis/06_paper_exps/ds/group_s2/data.yaml",
+   "n": {
+    "train": 4971,
+    "val": 1065,
+    "test": 1065
+   },
+   "leak_rate": {
+    "val": 0.0019,
+    "test": 0.0
+   },
+   "test_overlap_with_seed0": 0.3925,
+   "res_share_test": {
+    "640": 0.1784,
+    "720": 0.0113,
+    "960": 0.708,
+    "1080": 0.0601,
+    "1600": 0.0423
+   }
+  },
+  "random_s2": {
+   "yaml": "analysis/06_paper_exps/ds/random_s2/data.yaml",
+   "n": {
+    "train": 4971,
+    "val": 1065,
+    "test": 1065
+   },
+   "leak_rate": {
+    "val": 0.6779,
+    "test": 0.6986
+   },
+   "test_overlap_with_seed0": 0.1643,
+   "res_share_test": {
+    "640": 0.1662,
+    "720": 0.0122,
+    "960": 0.7164,
+    "1080": 0.0667,
+    "1600": 0.0385
+   }
+  }
+ },
+ "E3": {
+  "design": "crossover",
+  "twinA": {
+   "yaml": "analysis/06_paper_exps/ds/inj_twinA/data.yaml",
+   "n_train": 4971
+  },
+  "twinB": {
+   "yaml": "analysis/06_paper_exps/ds/inj_twinB/data.yaml",
+   "n_train": 4971
+  },
+  "counts": {
+   "anchors": 392,
+   "A": 197,
+   "B": 195,
+   "twins_per_arm": 395,
+   "placebo": 948,
+   "A_res": {
+    "960": 170,
+    "640": 25,
+    "1080": 1,
+    "1600": 1
+   },
+   "B_res": {
+    "960": 170,
+    "640": 24,
+    "1600": 1
+   },
+   "A_boxes": 581,
+   "B_boxes": 581,
+   "twinsA_res": {
+    "960": 365,
+    "640": 28,
+    "1600": 1,
+    "1080": 1
+   },
+   "twinsB_res": {
+    "960": 364,
+    "640": 30,
+    "1600": 1
+   }
+  },
+  "base": {
+   "yaml": "analysis/06_paper_exps/ds/inj_base/data.yaml",
+   "n_train": 4971
+  }
+ },
+ "disk_used_MB": 91.01
+}

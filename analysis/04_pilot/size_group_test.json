@@ -1,0 +1,90 @@
+{
+ "tag": "group_test",
+ "n_images": 1065,
+ "bins_norm_area": {
+  "small": 0.0025000000000000005,
+  "medium": 0.0225
+ },
+ "ap50": {
+  "all": {
+   "longitudinal": 0.24768206238493876,
+   "lateral": 0.17039870380287675,
+   "alligator": 0.21625459070584574,
+   "pothole": 0.17126341803658093,
+   "others": 0.05683928123890674,
+   "mean": 0.17248761123382977
+  },
+  "small": {
+   "longitudinal": 0.036136919533814385,
+   "lateral": 0.03798533767430234,
+   "alligator": 0.0,
+   "pothole": 0.10591341257338971,
+   "others": 0.0,
+   "mean": 0.036007133956301285
+  },
+  "medium": {
+   "longitudinal": 0.09828255130522202,
+   "lateral": 0.16682999832017104,
+   "alligator": 0.05380881419510766,
+   "pothole": 0.19081480556542887,
+   "others": 0.019119131439852454,
+   "mean": 0.1057710601651564
+  },
+  "large": {
+   "longitudinal": 0.3190597983115737,
+   "lateral": 0.2142152409621562,
+   "alligator": 0.26006205137346944,
+   "pothole": 0.19995334549141652,
+   "others": 0.07539807394774622,
+   "mean": 0.21373770201727238
+  }
+ },
+ "n_gt": {
+  "all": {
+   "longitudinal": 769,
+   "lateral": 515,
+   "alligator": 551,
+   "pothole": 937,
+   "others": 259
+  },
+  "small": {
+   "longitudinal": 25,
+   "lateral": 55,
+   "alligator": 11,
+   "pothole": 188,
+   "others": 12
+  },
+  "medium": {
+   "longitudinal": 223,
+   "lateral": 235,
+   "alligator": 103,
+   "pothole": 521,
+   "others": 66
+  },
+  "large": {
+   "longitudinal": 521,
+   "lateral": 225,
+   "alligator": 437,
+   "pothole": 228,
+   "others": 181
+  }
+ },
+ "recall_conf025_iou05": {
+  "all": {
+   "recall": 0.1352688881557242,
+   "n_gt": 3031
+  },
+  "small": {
+   "recall": 0.003436426116838488,
+   "n_gt": 291
+  },
+  "medium": {
+   "recall": 0.0627177700348432,
+   "n_gt": 1148
+  },
+  "large": {
+   "recall": 0.21168341708542712,
+   "n_gt": 1592
+  }
+ }
+}

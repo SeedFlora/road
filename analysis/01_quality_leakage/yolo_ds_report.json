@@ -1,0 +1,67 @@
+{
+ "group": {
+  "train": {
+   "ids": 4971,
+   "images": 4971,
+   "labels": 4971,
+   "ids_match_images": true,
+   "ids_match_labels": true,
+   "min_st_nlink": 3,
+   "samefile_check_first200": true
+  },
+  "val": {
+   "ids": 1065,
+   "images": 1065,
+   "labels": 1065,
+   "ids_match_images": true,
+   "ids_match_labels": true,
+   "min_st_nlink": 3,
+   "samefile_check_first200": true
+  },
+  "test": {
+   "ids": 1065,
+   "images": 1065,
+   "labels": 1065,
+   "ids_match_images": true,
+   "ids_match_labels": true,
+   "min_st_nlink": 3,
+   "samefile_check_first200": true
+  },
+  "yaml": "analysis/yolo_ds_group/data.yaml"
+ },
+ "random": {
+  "train": {
+   "ids": 4971,
+   "images": 4971,
+   "labels": 4971,
+   "ids_match_images": true,
+   "ids_match_labels": true,
+   "min_st_nlink": 3,
+   "samefile_check_first200": true
+  },
+  "val": {
+   "ids": 1065,
+   "images": 1065,
+   "labels": 1065,
+   "ids_match_images": true,
+   "ids_match_labels": true,
+   "min_st_nlink": 3,
+   "samefile_check_first200": true
+  },
+  "test": {
+   "ids": 1065,
+   "images": 1065,
+   "labels": 1065,
+   "ids_match_images": true,
+   "ids_match_labels": true,
+   "min_st_nlink": 3,
+   "samefile_check_first200": true
+  },
+  "yaml": "analysis/yolo_ds_random/data.yaml"
+ },
+ "disk_free_before_GB": 10.227,
+ "disk_free_after_GB": 10.227,
+ "disk_used_MB": 0.0,
+ "first_build_disk_used_MB": 9.75,
+ "note": "disk_used_MB of the re-run is 0 because links already existed; first build consumed 9.75 MB for both datasets (label copies + directory entries)"
+}

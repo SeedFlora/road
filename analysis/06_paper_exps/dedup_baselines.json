@@ -1,0 +1,191 @@
+{
+ "rules": [
+  {
+   "rule": "geometry-verified (ours)",
+   "pairs": 15101,
+   "groups_labeled": 2266,
+   "largest_group": 204,
+   "share_labeled_in_multi": 0.7926,
+   "test_leak_mean": 0.0,
+   "test_leak_min": 0.0,
+   "test_leak_max": 0.0,
+   "test_leak_strong_mean": 0.0,
+   "achieved_image_fractions_seed0": [
+    0.7,
+    0.15,
+    0.15
+   ]
+  },
+  {
+   "rule": "pHash <= 6",
+   "pairs": 678,
+   "groups_labeled": 6682,
+   "largest_group": 55,
+   "share_labeled_in_multi": 0.0953,
+   "test_leak_mean": 0.6898,
+   "test_leak_min": 0.6789,
+   "test_leak_max": 0.6986,
+   "test_leak_strong_mean": 0.5512,
+   "achieved_image_fractions_seed0": [
+    0.7,
+    0.15,
+    0.15
+   ]
+  },
+  {
+   "rule": "pHash <= 8",
+   "pairs": 2103,
+   "groups_labeled": 6098,
+   "largest_group": 264,
+   "share_labeled_in_multi": 0.195,
+   "test_leak_mean": 0.6681,
+   "test_leak_min": 0.6579,
+   "test_leak_max": 0.6808,
+   "test_leak_strong_mean": 0.5366,
+   "achieved_image_fractions_seed0": [
+    0.7,
+    0.15,
+    0.15
+   ]
+  },
+  {
+   "rule": "pHash <= 10",
+   "pairs": 6251,
+   "groups_labeled": 5209,
+   "largest_group": 929,
+   "share_labeled_in_multi": 0.3433,
+   "test_leak_mean": 0.6604,
+   "test_leak_min": 0.6515,
+   "test_leak_max": 0.6686,
+   "test_leak_strong_mean": 0.5035,
+   "achieved_image_fractions_seed0": [
+    0.703,
+    0.148,
+    0.148
+   ]
+  },
+  {
+   "rule": "DINOv2 cos >= 0.95",
+   "pairs": 804,
+   "groups_labeled": 6540,
+   "largest_group": 10,
+   "share_labeled_in_multi": 0.1391,
+   "test_leak_mean": 0.6631,
+   "test_leak_min": 0.6466,
+   "test_leak_max": 0.6826,
+   "test_leak_strong_mean": 0.5263,
+   "achieved_image_fractions_seed0": [
+    0.7,
+    0.15,
+    0.15
+   ]
+  },
+  {
+   "rule": "DINOv2 cos >= 0.90",
+   "pairs": 11082,
+   "groups_labeled": 3632,
+   "largest_group": 626,
+   "share_labeled_in_multi": 0.6086,
+   "test_leak_mean": 0.424,
+   "test_leak_min": 0.416,
+   "test_leak_max": 0.4329,
+   "test_leak_strong_mean": 0.2613,
+   "achieved_image_fractions_seed0": [
+    0.7,
+    0.15,
+    0.15
+   ]
+  },
+  {
+   "rule": "DINOv2 full-frame cos >= 0.90",
+   "pairs": null,
+   "groups_labeled": 3094,
+   "largest_group": 729,
+   "share_labeled_in_multi": 0.6784,
+   "test_leak_mean": 0.3971,
+   "test_leak_min": 0.3793,
+   "test_leak_max": 0.4216,
+   "test_leak_strong_mean": 0.2481,
+   "achieved_image_fractions_seed0": [
+    0.7,
+    0.15,
+    0.15
+   ]
+  },
+  {
+   "rule": "DINOv2 average linkage, cut 0.15",
+   "pairs": null,
+   "groups_labeled": 2950,
+   "largest_group": 73,
+   "share_labeled_in_multi": 0.7796,
+   "test_leak_mean": 0.3459,
+   "test_leak_min": 0.3315,
+   "test_leak_max": 0.3568,
+   "test_leak_strong_mean": 0.2003,
+   "achieved_image_fractions_seed0": [
+    0.7,
+    0.15,
+    0.15
+   ]
+  },
+  {
+   "rule": "DINOv2 average linkage, cut 0.18",
+   "pairs": null,
+   "groups_labeled": 2145,
+   "largest_group": 190,
+   "share_labeled_in_multi": 0.8619,
+   "test_leak_mean": 0.2959,
+   "test_leak_min": 0.2854,
+   "test_leak_max": 0.3089,
+   "test_leak_strong_mean": 0.1575,
+   "achieved_image_fractions_seed0": [
+    0.7,
+    0.15,
+    0.15
+   ]
+  },
+  {
+   "rule": "none (random split)",
+   "pairs": 0,
+   "groups_labeled": 7101,
+   "largest_group": 1,
+   "share_labeled_in_multi": 0.0,
+   "test_leak_mean": 0.6977,
+   "test_leak_min": 0.6761,
+   "test_leak_max": 0.7183,
+   "test_leak_strong_mean": 0.5662,
+   "achieved_image_fractions_seed0": [
+    0.7,
+    0.15,
+    0.15
+   ]
+  }
+ ],
+ "pair_agreement": {
+  "pHash<=6": {
+   "candidate_pairs": 447,
+   "share_verified": 0.774,
+   "recall_of_verified_pairs": 0.0229
+  },
+  "pHash<=8": {
+   "candidate_pairs": 953,
+   "share_verified": 0.6936,
+   "recall_of_verified_pairs": 0.0438
+  },
+  "pHash<=10": {
+   "candidate_pairs": 1843,
+   "share_verified": 0.6137,
+   "recall_of_verified_pairs": 0.0749
+  },
+  "cos>=0.95": {
+   "candidate_pairs": 804,
+   "share_verified": 0.9378,
+   "recall_of_verified_pairs": 0.0499
+  },
+  "cos>=0.9": {
+   "candidate_pairs": 10529,
+   "share_verified": 0.5173,
+   "recall_of_verified_pairs": 0.3607
+  }
+ }
+}

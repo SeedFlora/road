@@ -1,0 +1,40 @@
+{
+ "cos_only": {
+  "n": 20,
+  "same": 5,
+  "uncertain": 3,
+  "different": 12,
+  "stratum_size": 5082,
+  "share_same_lower": 0.25,
+  "share_same_upper": 0.4
+ },
+ "ours_strong": {
+  "n": 20,
+  "same": 14,
+  "uncertain": 3,
+  "different": 3,
+  "stratum_size": 9186,
+  "share_same_lower": 0.7,
+  "share_same_upper": 0.85
+ },
+ "ours_weak": {
+  "n": 20,
+  "same": 11,
+  "uncertain": 1,
+  "different": 8,
+  "stratum_size": 5915,
+  "share_same_lower": 0.55,
+  "share_same_upper": 0.6
+ },
+ "phash_only": {
+  "n": 20,
+  "same": 0,
+  "uncertain": 9,
+  "different": 11,
+  "stratum_size": 712,
+  "share_same_lower": 0.0,
+  "share_same_upper": 0.45
+ },
+ "accepted_precision_lower": 0.641,
+ "accepted_precision_upper": 0.752
+}

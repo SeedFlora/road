@@ -1,0 +1,90 @@
+{
+ "tag": "random_test",
+ "n_images": 1065,
+ "bins_norm_area": {
+  "small": 0.0025000000000000005,
+  "medium": 0.0225
+ },
+ "ap50": {
+  "all": {
+   "longitudinal": 0.2924277142646616,
+   "lateral": 0.21251233419064727,
+   "alligator": 0.25952689281102154,
+   "pothole": 0.1915637476426063,
+   "others": 0.07482751577770047,
+   "mean": 0.2061716409373274
+  },
+  "small": {
+   "longitudinal": 0.04111273496687649,
+   "lateral": 0.14889107876635477,
+   "alligator": 0.013548723293381968,
+   "pothole": 0.09884221894606735,
+   "others": 0.0,
+   "mean": 0.06047895119453611
+  },
+  "medium": {
+   "longitudinal": 0.14254293525962458,
+   "lateral": 0.1734464481906624,
+   "alligator": 0.08021664165089759,
+   "pothole": 0.19402605482343205,
+   "others": 0.0014827459611440152,
+   "mean": 0.11834296517715212
+  },
+  "large": {
+   "longitudinal": 0.379924334238602,
+   "lateral": 0.3090418780403275,
+   "alligator": 0.3078165457540766,
+   "pothole": 0.2864943020039945,
+   "others": 0.11262947961851835,
+   "mean": 0.2791813079311038
+  }
+ },
+ "n_gt": {
+  "all": {
+   "longitudinal": 756,
+   "lateral": 496,
+   "alligator": 522,
+   "pothole": 934,
+   "others": 274
+  },
+  "small": {
+   "longitudinal": 16,
+   "lateral": 70,
+   "alligator": 4,
+   "pothole": 241,
+   "others": 17
+  },
+  "medium": {
+   "longitudinal": 246,
+   "lateral": 243,
+   "alligator": 108,
+   "pothole": 482,
+   "others": 79
+  },
+  "large": {
+   "longitudinal": 494,
+   "lateral": 183,
+   "alligator": 410,
+   "pothole": 211,
+   "others": 178
+  }
+ },
+ "recall_conf025_iou05": {
+  "all": {
+   "recall": 0.17404426559356137,
+   "n_gt": 2982
+  },
+  "small": {
+   "recall": 0.014367816091954023,
+   "n_gt": 348
+  },
+  "medium": {
+   "recall": 0.07944732297063903,
+   "n_gt": 1158
+  },
+  "large": {
+   "recall": 0.2859078590785908,
+   "n_gt": 1476
+  }
+ }
+}

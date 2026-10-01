@@ -1,0 +1,126 @@
+{
+ "prevalence_all": 0.8034924845269673,
+ "prevalence_strong": 0.6934129089301503,
+ "prevalence_weighted": [
+  0.7172335347998559,
+  0.7503027919000028
+ ],
+ "random_test_leak_all": [
+  0.676056338028169,
+  0.7183098591549296,
+  0.6985915492957746
+ ],
+ "random_test_leak_strong": [
+  0.5624413145539906,
+  0.5746478873239437,
+  0.5615023474178403
+ ],
+ "random_test_leak_weighted": [
+  0.5871588483131434,
+  0.6282816304393483
+ ],
+ "group_test_leak_all": [
+  0.0,
+  0.0,
+  0.0
+ ],
+ "group_test_leak_strong": [
+  0.0,
+  0.0,
+  0.0
+ ],
+ "group_test_leak_weighted": [
+  0.0,
+  0.0
+ ],
+ "plain_cc_largest_all": 808,
+ "plain_cc_largest_labeled": 634,
+ "ours_largest_all": 250,
+ "twins": {
+  "A": {
+   "twins": 395,
+   "direct": 275,
+   "anchors": 197,
+   "anchors_without_direct_twin": 11,
+   "mean_twins_per_anchor": 2.00507614213198,
+   "share_anchors_one_twin": 0.5025380710659898
+  },
+  "B": {
+   "twins": 395,
+   "direct": 286,
+   "anchors": 195,
+   "anchors_without_direct_twin": 8,
+   "mean_twins_per_anchor": 2.0256410256410255,
+   "share_anchors_one_twin": 0.4717948717948718
+  }
+ },
+ "composition": {
+  "random": [
+   {
+    "test_singleton_share": 0.22253521126760564,
+    "test_from_groups_ge20": 0.32582159624413143,
+    "max_group_size_of_test_images": 204,
+    "train_groups_covered": 1758
+   },
+   {
+    "test_singleton_share": 0.19248826291079812,
+    "test_from_groups_ge20": 0.34178403755868547,
+    "max_group_size_of_test_images": 204,
+    "train_groups_covered": 1807
+   },
+   {
+    "test_singleton_share": 0.2112676056338028,
+    "test_from_groups_ge20": 0.3502347417840376,
+    "max_group_size_of_test_images": 204,
+    "train_groups_covered": 1778
+   }
+  ],
+  "group": [
+   {
+    "test_singleton_share": 0.40469483568075115,
+    "test_from_groups_ge20": 0.0,
+    "max_group_size_of_test_images": 19,
+    "train_groups_covered": 1008
+   },
+   {
+    "test_singleton_share": 0.40187793427230045,
+    "test_from_groups_ge20": 0.0,
+    "max_group_size_of_test_images": 19,
+    "train_groups_covered": 1023
+   },
+   {
+    "test_singleton_share": 0.4131455399061033,
+    "test_from_groups_ge20": 0.0,
+    "max_group_size_of_test_images": 13,
+    "train_groups_covered": 1014
+   }
+  ]
+ },
+ "labeled_groups_total": 2266,
+ "test_overlap_group": [
+  0.39248826291079814,
+  0.39248826291079814,
+  0.3436619718309859
+ ],
+ "test_overlap_random": [
+  0.14647887323943662,
+  0.1643192488262911,
+  0.14460093896713616
+ ],
+ "group_test_share_cos90_neighbor": [
+  0.14835680751173708,
+  0.15211267605633802,
+  0.14460093896713616
+ ],
+ "residual_leak_estimate": [
+  0.037089201877934276,
+  0.05934272300469484
+ ],
+ "random_test_share_cos90_neighbor": [
+  0.49577464788732395,
+  0.5230046948356808,
+  0.5183098591549296
+ ],
+ "audit_fp_accepted": 11,
+ "audit_fp_with_common_neighbor": 8
+}

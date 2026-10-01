@@ -1,0 +1,42 @@
+services:
+  paper:
+    build:
+      context: .
+      target: paper
+    image: road-paper:local
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+    command: [python, reproduce.py, paper]
+
+  experiments:
+    build:
+      context: .
+      target: experiments
+    image: road-experiments:local
+    working_dir: /workspace
+    shm_size: 4gb
+    environment:
+      ROAD_DEVICE: "${ROAD_DEVICE:-0}"
+    volumes:
+      - .:/workspace
+      - type: bind
+        source: "${ROAD_IMAGE_DIR:-./RDDC 2024_image}"
+        target: /workspace/RDDC 2024_image
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: "${ROAD_LABEL_DIR:-./RDDC 2024_label}"
+        target: /workspace/RDDC 2024_label
+        read_only: true
+        bind:
+          create_host_path: false
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    command: [python, reproduce.py, check, --data]

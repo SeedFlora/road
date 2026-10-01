@@ -1,0 +1,46 @@
+# Keep the build context small even beside the multi-GB original dataset.
+.git
+.playwright-mcp
+.repro-check
+.env
+.venv
+venv
+RDDC 2024_image
+RDDC 2024_label
+analysis/yolo_ds_*
+analysis/02_domain_shift
+analysis/03_objects
+analysis/05_planning
+**/ds
+**/runs
+**/eval
+**/eval_cache
+**/eval_lists
+**/sift_cache
+**/audit
+**/figs
+!paper/figs
+**/__pycache__/
+*.pyc
+**/*.npy
+**/*.npz
+**/*.pt
+**/*.pkl
+**/*.cache
+**/*.jpg
+**/*.png
+**/*.log
+**/*.aux
+**/*.out
+**/*.zip
+**/*.synctex.gz
+**/log_*.txt
+**/eval_log.txt
+**/*_status.json
+**/queue_status.json
+analysis/phash_groups_thr10.json
+analysis/arx.xml
+paper/IEEE-conference-template-062824
+paper/main_before_imrad.tex
+paper/main.pdf
+repro/generated
