@@ -1,6 +1,6 @@
 # Install torch==2.11.0 and torchvision==0.26.0 from the CUDA 12.8
 # index first (see Dockerfile), or from the CPU index for CPU-only use.
--r requirements-paper.txt
+-r requirements-report.txt
 pandas==2.3.3
 scipy==1.17.1
 scikit-learn==1.9.0

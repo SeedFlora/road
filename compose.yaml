@@ -1,13 +1,13 @@
 services:
-  paper:
+  report:
     build:
       context: .
-      target: paper
-    image: road-paper:local
+      target: report
+    image: road-report:local
     working_dir: /workspace
     volumes:
       - .:/workspace
-    command: [python, reproduce.py, paper]
+    command: [python, reproduce.py, report]
 
   experiments:
     build:

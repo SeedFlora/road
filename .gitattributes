@@ -7,4 +7,3 @@
 Dockerfile text eol=lf
 *.png binary
 *.pdf binary
-paper/IEEEtran.cls -whitespace

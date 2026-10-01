@@ -35,16 +35,7 @@
 **/*_status.json
 /analysis/04_pilot/*_crash*
 /analysis/04_pilot/imgsz_probe_*.csv
-/paper/IEEE-conference-template-062824/
-/paper/main_before_imrad.tex
-/paper/main.pdf
-/paper/_*.png
-/paper/build*.log
-!/paper/figs/
-!/paper/figs/fig_pairs.pdf
-!/paper/figs/fig_results.pdf
-!/paper/figs/fig_pairs.png
-!/paper/figs/fig_results.png
+/paper/
 .playwright-mcp/
 .env
 .env.*

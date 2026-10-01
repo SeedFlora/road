@@ -19,7 +19,6 @@ analysis/05_planning
 **/sift_cache
 **/audit
 **/figs
-!paper/figs
 **/__pycache__/
 *.pyc
 **/*.npy
@@ -40,7 +39,5 @@ analysis/05_planning
 **/queue_status.json
 analysis/phash_groups_thr10.json
 analysis/arx.xml
-paper/IEEE-conference-template-062824
-paper/main_before_imrad.tex
-paper/main.pdf
+paper
 repro/generated

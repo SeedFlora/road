@@ -1,11 +1,11 @@
-"""Write paper/numbers.tex (LaTeX macros) from the analysis JSON files, so every number in the paper is traceable.
+"""Write repro/generated/numbers.tex (LaTeX macros) from the analysis JSON files, so every reported number is traceable.
 Missing results are rendered as a red '??' so they cannot slip into a submission unnoticed."""
 import json
 from pathlib import Path
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[2]
-A = ROOT / "analysis"; HERE = A / "06_paper_exps"; OUT = ROOT / "paper" / "numbers.tex"
+A = ROOT / "analysis"; HERE = A / "06_paper_exps"; OUT = ROOT / "repro" / "generated" / "numbers.tex"
 J = lambda p: json.loads(Path(p).read_text()) if Path(p).exists() else None
 nd = J(A / "01_quality_leakage/near_duplicate_summary.json"); dd = J(HERE / "dedup_baselines.json")
 au = J(HERE / "pair_audit_summary.json"); ds = J(HERE / "datasets_report.json"); rp = J(HERE / "results_paper.json")

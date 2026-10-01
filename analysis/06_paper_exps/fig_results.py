@@ -33,7 +33,7 @@ ax[1].set_yticks([]); ax[1].spines["left"].set_visible(False); ax[1].set_xlim(-0
 ax[1].set_xlabel("difference in mAP50 (own AP)"); ax[1].set_title("(b) crossover", fontsize=8)
 ax[1].set_ylim(-0.5, len(rows) - 0.1)
 plt.tight_layout(pad=0.2, w_pad=0.6)
-out = HERE.parent.parent / "paper" / "figs"
+out = HERE.parent.parent / "repro" / "generated" / "figures"
 out.mkdir(parents=True, exist_ok=True)
 plt.savefig(out / "fig_results.pdf", bbox_inches="tight", pad_inches=0.01); plt.savefig(out / "fig_results.png", dpi=220, bbox_inches="tight")
 print("saved")

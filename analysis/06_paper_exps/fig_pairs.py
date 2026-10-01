@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 matplotlib.rcParams.update({"pdf.fonttype": 42, "ps.fonttype": 42, "font.family": "serif", "font.serif": ["Times New Roman", "Nimbus Roman", "STIXGeneral"], "font.size": 8})
 ROOT = Path(__file__).resolve().parents[2]
 IMG = ROOT / "RDDC 2024_image"
-FIG = ROOT / "paper" / "figs"
+FIG = ROOT / "repro" / "generated" / "figures"
 FIG.mkdir(parents=True, exist_ok=True)
 pairs = [("2946.png", "5346.png", "(a) verified near-duplicate\n44 inliers, cos 0.93, Hamming 18"),
          ("5006.jpg", "7683.jpg", "(b) pHash match, different spots\nHamming 6 (shared ego plate), 0 inliers"),

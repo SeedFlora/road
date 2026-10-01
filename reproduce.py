@@ -1,4 +1,4 @@
-"""Reproduce the published paper or its experiments, with explicit stages."""
+"""Reproduce the experiment results and figures, with explicit stages."""
 import argparse
 import csv
 import hashlib
@@ -50,21 +50,11 @@ def check(data=False, validate=False):
     print("Reproduction inputs are present.", flush=True)
 
 
-def paper():
+def report():
     check()
-    tex = shutil.which("pdflatex")
-    if not tex:
-        raise RuntimeError("pdflatex is required. Use docker compose run --rm paper.")
-    (ROOT / "paper/figs").mkdir(parents=True, exist_ok=True)
     run("analysis/06_paper_exps/gen_numbers.py")
     run("analysis/06_paper_exps/fig_results.py")
-    for _ in range(2):
-        result = subprocess.run([tex, "-interaction=nonstopmode", "-halt-on-error", "main.tex"],
-                                cwd=ROOT / "paper", stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
-        if result.returncode:
-            print("\n".join(result.stdout.splitlines()[-35:]), file=sys.stderr)
-            result.check_returncode()
-    print("Built paper/main.pdf using saved experiment results.", flush=True)
+    print("Generated result figures and number macros in repro/generated/.", flush=True)
 
 
 def prepare(recompute=False):
@@ -163,7 +153,7 @@ def require_fresh_outputs(datasets_only=False):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("stage", choices=("check", "paper", "prepare", "audit", "baselines", "train", "evaluate", "all"))
+    parser.add_argument("stage", choices=("check", "report", "prepare", "audit", "baselines", "train", "evaluate", "all"))
     parser.add_argument("--data", action="store_true", help="Verify all original images/labels against the paper SHA-256 manifest.")
     parser.add_argument("--recompute-splits", action="store_true", help="Recompute split assignments rather than restoring recorded partitions.")
     args = parser.parse_args()
@@ -179,7 +169,7 @@ def main():
         train()
         evaluate()
         run("analysis/06_paper_exps/fig_pairs.py")
-        paper()
+        report()
     else:
         globals()[args.stage]()
 
